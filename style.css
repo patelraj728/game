@@ -3,10 +3,14 @@
     padding: 0;
     text-align: center;
 }
+#body{
+    background-color: white;
+}
 h1{
     background-color: rgb(39, 39, 103);
     color: white;
     height: 5rem;
+    width: 100%;
     line-height: 5rem;
 }
 #container{
@@ -16,8 +20,8 @@ h1{
     margin-top: 20px;
 }
 .choice{
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,11 +31,16 @@ h1{
     border-radius: 50%;
 }
 img{
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     object-fit: cover;
 
+}
+#text{
+    margin: 40px 0 0 0;
+    line-height: 2rem;
+    font-size: 1rem;
 }
 #score{
     margin: 50px 0 0 0;
@@ -45,14 +54,30 @@ p{
 .number{
     font-size: 40px;
 }
-
+.lable{
+    margin: 20px 0 0 0;
+    height: 100px;
+    display: inline;
+    padding: 2rem;
+}
+#msg{
+    
+    padding: 0.5rem;
+}
 h2{
     background-color: rgb(39, 39, 103);
     color: white;
-    height: 4rem;
     line-height: 4rem;
     font-size: 2rem;
     margin: 40px 0 0 0;
     display: inline;
     border-radius: 2px;
+}
+.confetti-particle {
+  position: fixed;
+  pointer-events: none;
+  width: 6px;
+  height: 6px;
+  will-change: transform;
+  z-index: 9999;
 }
