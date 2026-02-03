@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissoors</title>
+    <link rel="stylesheet" href="StonePaperScissor.css">
 </head>
-<body>
+<body id="body">
     <h1>Rock-Paper-Scissoors</h1>
     <div id="container">
         <div class="choice" id="rock">
@@ -19,19 +19,28 @@
             <img src="scissors.png">
         </div>
     </div>
+    <div id="text">
+        <p class="userchoisetext"></p>
+        <p class="compchoisetext"></p>
+    </div>
     <div id="score">
-        <div id="userscore">
-            <p class="number">0</p>
+        <div>
+            <p class="number" id="userscore">0</p>
             <p>YOU</p>
         </div>
-        <div id="compscore">
-            <p class="number">0</p>
+        <div>
+            <p class="number" id="compscore">0</p>
             <p>COMP</p>
+        </div>
+        <div>
+            <p class="number" id="drawscore">0</p>
+            <p>draw</p>
         </div>
     </div>
     <div class="lable">
-        <h2>Select Your Choice</h2>
+        <h2 id="msg">Start the Game</h2>
     </div>
-    <script src="app.js"></script>
+    
+    <script src="StonePaperScissor.js"></script>
 </body>
 </html>
